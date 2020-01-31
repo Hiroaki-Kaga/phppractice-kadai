@@ -6,3 +6,6 @@ if($name == "Hiroaki"){
 }else{
     echo $name."ではありません";
 }
+
+
+1234567890
