@@ -15,10 +15,10 @@ for ($i = 1; $i <= 10000; $i++) {
 
 echo $total;
 
-$fruits = ("orange" ,"apple" ,"strawberry", "peach", "none" ,)
+$fruits =array("orange" ,"apple" ,"strawberry", "peach", "none" );
 
 foreach ($fruits as $fruit) {
-    echo $fruit.;
+    echo $fruit;
 }
 
 
@@ -32,3 +32,4 @@ for($i = $start; $i <= $end; $i++) {
   }
 
 }
+
