@@ -1,17 +1,18 @@
 <?php
 
 
-$timestamp = mktime(0, 0, 0, 4, 1, 2017);
-$date = date('w', $timestamp);
+function product($arr){
 
-$week = [
-  '日', //0
-  '月', //1
-  '火', //2
-  '水', //3
-  '木', //4
-  '金', //5
-  '土', //6
-];
+    $result = $arr[0]; 
 
-echo $week[$date] . '曜日';
+    for ($i = 1; $i < count($arr); $i++) {
+
+            $result *= $arr[$i];
+
+    }
+
+    return $result;
+
+}
+
+echo product(array(1, 3, 5 ,7, 9));

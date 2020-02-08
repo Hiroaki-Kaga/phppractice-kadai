@@ -27,19 +27,27 @@ echo $result;
 
 
 // 課題3
-$arr = array(1,3,5,7,9);
-function m($arr){
-  $result = 5;
-  for($i = 0; $i < count($arr)-1; $i++){
-  $result *= $i;
-  
-  }
+function product($arr){
 
-  return $result;
+    $result = $arr[0]; 
+
+    for ($i = 1; $i < count($arr); $i++) {
+
+            $result *= $arr[$i];
+
+    }
+
+    return $result;
 
 }
 
-echo m(5);
+echo product(array(1, 3, 5 ,7, 9));
+
+
+
+
+
+
 
 
 
